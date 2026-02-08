@@ -1,0 +1,16 @@
+
+# dbt generated folders
+target/
+logs/
+dbt_packages/
+
+# DuckDB file
+*.duckdb
+
+# Python
+__pycache__/
+venv/
+dbt-env/
+
+# OS
+.DS_Store
