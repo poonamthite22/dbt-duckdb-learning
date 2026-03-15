@@ -5,3 +5,5 @@ order_id,customer_id,product_id,quantity,unit_price,order_date,status
 3,101,1003,1,200,2024-01-02,completed
 4,103,1002,3,300,2024-01-03,cancelled
 5,104,1001,1,250,2024-01-03,completed
+6,999,1001,1,250,2024-01-05,completed
+7,105,1002,1,300,2024-01-06,completed

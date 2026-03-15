@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: fct_orders
+    description: Fact table containing order-level transaction data. Each row represents a completed order and includes calculated total revenue for the transaction.
+    columns:
+      - name: customer_id
+        tests:
+          - relationships:
+              arguments:
+              to: ref('dim_customers')
+              field: customer_id

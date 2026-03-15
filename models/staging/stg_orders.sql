@@ -1,5 +1,3 @@
 {{ config(materialized='table') }}
 
-SELECT *
-FROM read_csv_auto('data/orders.csv')
-
+SELECT * FROM {{source('raw_data','orders')}}

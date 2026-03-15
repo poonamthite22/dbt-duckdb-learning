@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: Raw orders data loaded from CSV. This staging model standardizes column names and prepares the dataset for downstream transformations.
+
+    columns:
+      - name: order_id
+        description: Unique identifier for each order.
+
+      - name: customer_id
+        description: ID representing the customer who placed the order.
+
+      - name: product_id
+        description: Identifier for the product purchased.
+
+      - name: quantity
+        description: Number of units purchased in the order.
+
+      - name: unit_price
+        description: Price per unit of the product.
+
+      - name: order_date
+        description: Date when the order was placed.
+
+      - name: status
+        description: Order status (completed or cancelled).

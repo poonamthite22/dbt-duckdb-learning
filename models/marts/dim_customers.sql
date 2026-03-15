@@ -1,5 +1,4 @@
-{{config(materialized='table')}}
+{{ config(materialized='table') }}
 
-SELECT DISTINCT
-     customer_id
-FROM{{ref('stg_orders_dedup')}}     
+SELECT DISTINCT customer_id
+FROM {{ ref('stg_orders_dedup') }}
